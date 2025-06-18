@@ -16,6 +16,12 @@ class Cat extends Animal {
     }
 }
 
+class Bird extends Animal {
+    void chirp() {
+        System.out.println("The bird chirps.");
+    }
+}
+
 public class Java3 {
     public static void main(String[] args) {
         Dog myDog = new Dog();
@@ -24,5 +30,8 @@ public class Java3 {
         Cat myCat = new Cat();
         myCat.eat();   // Inherited method
         myCat.meow();  // Cat's own method
+        Bird myBird = new Bird();
+        myBird.eat();  // Inherited method
+        myBird.chirp(); // Bird's own method
     }
 }
